@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13526"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZQShapedButtonDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vU-eu-xdY" customClass="ZQShapedButton" customModule="ZQShapedButtonDemo" customModuleProvider="target">
+                                <rect key="frame" x="137" y="293.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="QiQ-Sc-QoO"/>
+                                    <constraint firstAttribute="width" secondItem="7vU-eu-xdY" secondAttribute="height" multiplier="1:1" id="XZr-t7-tEq"/>
+                                </constraints>
+                                <state key="normal" image="button-normal"/>
+                                <state key="highlighted" image="button-highlighted"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mhc-ba-tby" customClass="ZQShapedButton" customModule="ZQShapedButtonDemo" customModuleProvider="target">
+                                <rect key="frame" x="162" y="443.5" width="50" height="50"/>
+                                <state key="normal" image="button-normal"/>
+                                <state key="highlighted" image="button-highlighted"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0NS-co-OPi" customClass="ZQShapedButton" customModule="ZQShapedButtonDemo" customModuleProvider="target">
+                                <rect key="frame" x="137" y="468.5" width="50" height="50"/>
+                                <state key="normal" image="button-normal"/>
+                                <state key="highlighted" image="button-highlighted"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hp-Mt-CiT" customClass="ZQShapedButton" customModule="ZQShapedButtonDemo" customModuleProvider="target">
+                                <rect key="frame" x="162" y="493.5" width="50" height="50"/>
+                                <state key="normal" image="button-normal"/>
+                                <state key="highlighted" image="button-highlighted"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wnr-4b-Fdx" customClass="ZQShapedButton" customModule="ZQShapedButtonDemo" customModuleProvider="target">
+                                <rect key="frame" x="187" y="468.5" width="50" height="50"/>
+                                <state key="normal" image="button-normal"/>
+                                <state key="highlighted" image="button-highlighted"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdu-hm-wQF" customClass="ZQShapedButton" customModule="ZQShapedButtonDemo" customModuleProvider="target">
+                                <rect key="frame" x="137" y="143.5" width="100" height="100"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rdu-hm-wQF" secondAttribute="height" multiplier="1:1" id="7pc-JV-0cl"/>
+                                    <constraint firstAttribute="width" constant="100" id="IdZ-qo-nIJ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0NS-co-OPi" firstAttribute="top" secondItem="Mhc-ba-tby" secondAttribute="bottom" constant="-25" id="2vk-ma-qjS"/>
+                            <constraint firstItem="2hp-Mt-CiT" firstAttribute="top" secondItem="Mhc-ba-tby" secondAttribute="bottom" id="8oV-6w-xhf"/>
+                            <constraint firstItem="7vU-eu-xdY" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Dt9-ei-7dR"/>
+                            <constraint firstItem="2hp-Mt-CiT" firstAttribute="centerX" secondItem="Mhc-ba-tby" secondAttribute="centerX" id="P1v-ys-tPa"/>
+                            <constraint firstItem="7vU-eu-xdY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QhN-fx-3Ho"/>
+                            <constraint firstItem="Wnr-4b-Fdx" firstAttribute="leading" secondItem="0NS-co-OPi" secondAttribute="trailing" id="Trk-SW-BrZ"/>
+                            <constraint firstItem="7vU-eu-xdY" firstAttribute="top" secondItem="rdu-hm-wQF" secondAttribute="bottom" constant="50" id="V0O-Wc-KIK"/>
+                            <constraint firstItem="Wnr-4b-Fdx" firstAttribute="centerY" secondItem="0NS-co-OPi" secondAttribute="centerY" id="ZeZ-Hj-rwj"/>
+                            <constraint firstItem="Mhc-ba-tby" firstAttribute="leading" secondItem="0NS-co-OPi" secondAttribute="trailing" constant="-25" id="h70-aJ-VyQ"/>
+                            <constraint firstItem="rdu-hm-wQF" firstAttribute="centerX" secondItem="7vU-eu-xdY" secondAttribute="centerX" id="nOE-2T-470"/>
+                            <constraint firstItem="Mhc-ba-tby" firstAttribute="centerX" secondItem="7vU-eu-xdY" secondAttribute="centerX" id="rB8-hf-pTg"/>
+                            <constraint firstItem="Mhc-ba-tby" firstAttribute="top" secondItem="7vU-eu-xdY" secondAttribute="bottom" constant="50" id="rjk-2g-m6y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="rdu-hm-wQF" id="0zr-9p-D3Y"/>
+                        <outlet property="button1" destination="Mhc-ba-tby" id="7rx-dn-oqA"/>
+                        <outlet property="button2" destination="0NS-co-OPi" id="x50-QM-OYe"/>
+                        <outlet property="button3" destination="2hp-Mt-CiT" id="gpk-lD-ebM"/>
+                        <outlet property="button4" destination="Wnr-4b-Fdx" id="jmA-4d-R0M"/>
+                        <outlet property="imgButton" destination="7vU-eu-xdY" id="gRv-8k-qv2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button-highlighted" width="50" height="50"/>
+        <image name="button-normal" width="50" height="50"/>
+    </resources>
+</document>
