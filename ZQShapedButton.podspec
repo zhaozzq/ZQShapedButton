@@ -2,8 +2,8 @@ Pod::Spec.new do |s|
   s.name         = "ZQShapedButton"
   s.version      = "0.1"
   s.source       = { :git => "https://github.com/zhaozzq/ZQShapedButton.git", :tag => "#{s.version}" }
-  s.summary      = "A shaped button."
-  s.description  = "A shaped button."
+  s.summary      = "A shaped button in Swift."
+  s.description  = "A shaped button in Swift."
   s.homepage     = "https://github.com/zhaozzq/ZQShapedButton"
   s.license      = 'MIT'
   s.authors      = {'zhaozzq' => 'zhao_zzq2012@163.com'}
