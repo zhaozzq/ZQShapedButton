@@ -8,3 +8,9 @@ A shaped button. Refer to [OBShapedButton](https://github.com/ole/OBShapedButton
 ```
   pod 'ZQShapedButton'
 ```
+
+### Installation via Carthage
+
+```
+  github "zhaozzq/ZQShapedButton"
+```
