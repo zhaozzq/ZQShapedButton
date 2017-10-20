@@ -8,18 +8,17 @@
 
 import UIKit
 
-class ZQShapedButton: UIButton {
-    
-    enum ZQHitTestType {
-        case none
-        case path
-        case transparent
-    }
+public enum ZQHitTestType {
+    case none
+    case path
+    case transparent
+}
+
+public class ZQShapedButton: UIButton {
     
     public var hitTestType : ZQHitTestType = .none
     
     private var hitTestCache : (CGPoint, Bool)?
-    
     
     public var shapePath : UIBezierPath? {
         didSet {
@@ -39,12 +38,12 @@ class ZQShapedButton: UIButton {
         super.init(frame: frame)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
 //        fatalError("init(coder:) has not been implemented")
         super.init(coder: aDecoder)
     }
     
-    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+    override public func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
         
         guard self.hitTestType != .none else {
             return super.point(inside: point, with: event)
